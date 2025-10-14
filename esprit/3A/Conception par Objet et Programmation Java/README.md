@@ -3,9 +3,9 @@
 ![Esprit](https://img.shields.io/badge/Esprit-840010?style=for-the-badge&logo=Tutanota&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-# Prosit 1 --> 5
+# Prosit 1 --> 6
 
-This guide details the commands necessary to execute the provided solutions for **Prosit 1 --> 5**. These exercises focus on beginning Java application development centered around a `ZooManagement` system.
+This guide details the commands necessary to execute the provided solutions for **Prosit 1 --> 6**. These exercises focus on beginning Java application development centered around a `ZooManagement` system.
 
 ## Usage
 
@@ -43,6 +43,12 @@ java prosit-4/solution/ZooManagement.java prosit-4/solution/Zoo.java prosit-4/so
 
 ```sh
 java  prosit-5/solution/ZooManagement.java
+```
+
+### 6. Prosit-6
+
+```sh
+java  prosit-6/solution/ZooManagement.java
 ```
 
 ## Contact
