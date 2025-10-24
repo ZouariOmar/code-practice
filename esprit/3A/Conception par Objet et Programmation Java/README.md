@@ -3,31 +3,31 @@
 ![Esprit](https://img.shields.io/badge/Esprit-840010?style=for-the-badge&logo=Tutanota&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-# Prosit 1 --> 6
+# Prosit 1 --> 7
 
-This guide details the commands necessary to execute the provided solutions for **Prosit 1 --> 6**. These exercises focus on beginning Java application development centered around a `ZooManagement` system.
+This guide details the commands necessary to execute the provided solutions for **Prosit 1 --> 7**. These exercises focus on beginning Java application development centered around a `ZooManagement` system.
 
 ## Usage
 
-### 1. Prosit-1
+### Prosit-1
 
 ```sh
 java prosit-1/solution/ZooManagement.java
 ```
 
-### 2. Prosit-2
+### Prosit-2
 
 ```sh
 java prosit-2/solution/ZooManagement.java prosit-2/solution/Zoo.java prosit-2/solution/Animal.java
 ```
 
-### 3. Prosit-3
+### Prosit-3
 
 ```sh
 java prosit-3/solution/ZooManagement.java prosit-3/solution/Zoo.java prosit-3/solution/Animal.java
 ```
 
-### 4. Prosit-4
+### Prosit-4
 
 ```sh
 java prosit-4/solution/ZooManagement.java prosit-4/solution/Zoo.java prosit-4/solution/Animal.java
@@ -35,20 +35,25 @@ java prosit-4/solution/ZooManagement.java prosit-4/solution/Zoo.java prosit-4/so
 # And `Animal.java` && `Zoo.java` inside "tn/esprit/gestionzoo/entities"
 # Use `package` and `import` (Instruction 19)
 # Than run:
-# javac tn/esprit/gestionzoo/entities/*.java tn/esprit/gestionzoo/main/ZooManagement.java
 # java tn.esprit.gestionzoo.main.ZooManagement
 ```
 
-### 5. Prosit-5
+### Prosit-5
 
 ```sh
 java  prosit-5/solution/ZooManagement.java
 ```
 
-### 6. Prosit-6
+### Prosit-6
 
 ```sh
 java  prosit-6/solution/ZooManagement.java
+```
+
+### Prosit-7
+
+```sh
+java  prosit-7/solution/ZooManagement.java
 ```
 
 ## Contact
