@@ -3,9 +3,9 @@
 ![Esprit](https://img.shields.io/badge/Esprit-840010?style=for-the-badge&logo=Tutanota&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-# Prosit 1 --> 9
+# Prosit 1 --> 10
 
-This guide details the commands necessary to execute the provided solutions for **Prosit 1 --> 9**. These exercises focus on beginning Java application development.
+This guide details the commands necessary to execute the provided solutions for **Prosit 1 --> 10**. These exercises focus on beginning Java application development.
 
 ## Usage
 
@@ -66,6 +66,12 @@ java  prosit-8/solution/Main.java
 
 ```sh
 java  prosit-9/solution/Main.java
+```
+
+### Prosit-10
+
+```sh
+java  prosit-10/solution/Main.java
 ```
 
 ## Contact
