@@ -1,0 +1,59 @@
+Question 1
+Quels sont les principaux composants de l’architecture du serveur Oracle ?
+- Oracle instance
+- Oracle database
+
+Question 2
+Décrire le role d'un Oracle Database Administrator (DBA)
+> A DBA is responsible for maintaining, securing, & operating databases and also ensures that data is correctly stored and retrieved
+
+Question 3
+Qu'est-ce qui constitue une instance Oracle ?
+- SGA
+- PGA
+- Background Processes
+
+Question 4
+Nommez les composants de mémoire obligatoires au sein de la SGA (System Global Area).
+- Shared pool
+- Database buffer cache
+- Java pool
+- Large pool
+- Redo log buffer
+
+Question 5
+Quelle est la fonction du cache de tampon de base de données ?
+> Stores copies of data blocks that are read from data files
+
+Question 6
+Quel est le rôle du processus DBWn (Database Writer) ?
+> Reads the database buffer cache and writes modified buffers to data files
+
+Question 7
+Expliquer la fonction du processus LGWR (Log Writer).
+> Writes redo log entries sequentially from the redo log buffer to the online redo log
+
+Question 8
+Quelles tâches sont effectuées par le processus SMON (System Monitor) ?
+> Performs many database maintenance tasks
+
+Question 9
+Décrire les responsabilités du processus PMON (Process Monitor).
+> Periodically scans all processes to find any that have terminated unusually
+
+
+Question 10
+Quel est l'objectif du dictionnaire de données Oracle ?
+> RO set of tables that provides information about the database
+
+Question 11
+Quelles informations sont stockées dans la vue USER_OBJECTS ?
+> Describes all objects owned by the current user
+
+Question 12
+Que contient la vue USER_TABLES ?
+> Describes the relational tables owned by the current user
+
+Question 13
+Comment la vue USER_TAB_COLUMNS aide-t-elle les administrateurs de bases de données ?
+> Describes the columns of the tables, views, and clusters owned by the current user

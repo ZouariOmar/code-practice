@@ -8,7 +8,7 @@ SELECT count(pname) FROM v$process;
 -- 2
 SELECT
   u.username, 
-  (select count(*) FROM dba_users o WHERE o.owner = u.username) "obj_number"
+  (select count(*) FROM dba_users o WHERE o.username = u.username) "obj_number"
 FROM dba_users u;
 
 -- 3
@@ -64,7 +64,7 @@ RETURN NUMBER
 IS
     v_total NUMBER;
 BEGIN
-    SELECT SUM(bytes)
+    SELECT SUM(value)
     INTO v_total
     FROM v$sga;
 
@@ -173,8 +173,8 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE(
             'Type : ' || obj.object_type ||
             ' | Objet : ' || obj.object_name ||
-            ' | Créé le : ' || TO_CHAR(obj.created, 'DD/MM/YYYY HH24:MI:SS') ||
-            ' | Dernière modification : ' ||
+            ' | Created : ' || TO_CHAR(obj.created, 'DD/MM/YYYY HH24:MI:SS') ||
+            ' | Last modification : ' ||
             TO_CHAR(obj.last_ddl_time, 'DD/MM/YYYY HH24:MI:SS')
         );
     END LOOP;
@@ -184,23 +184,21 @@ END;
 -- 13
 SELECT constraint_name, constraint_type
 FROM user_constraints
-WHERE table_name = 'DEPARTMENTS';
+WHERE table_name = 'DEPARTMENTS' AND owner = 'HR';
 
 -- 14
 CREATE OR REPLACE FUNCTION FN_LAST_OBJ
 RETURN VARCHAR2
 IS
-    v_objet VARCHAR2(128);
+    v_objet VARCHAR2(100);
 BEGIN
     SELECT object_name
     INTO v_objet
-    FROM (
-        SELECT object_name
-        FROM user_objects
-        ORDER BY created DESC
-    )
-    WHERE ROWNUM = 1;
-
+    FROM user_objects
+    WHERE created = (SELECT MAX(CREATED) FROM USER_OBJECTS);
+EXCEPTION
+    WHERE NO_DATA_FOUND THEN
+        RETURN 'No object :('
     RETURN v_objet;
 END;
 /
